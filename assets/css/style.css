@@ -22,7 +22,9 @@ p{
 }
 
 /* End RESET CSS */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -46,6 +48,10 @@ body{
 
 .centered-text{
     text-align: center;
+}
+
+section{
+    margin-block: 100px;
 }
 
 /* END UTILITY CLASSES */
@@ -120,7 +126,6 @@ header >.hero-text > h1 {
 
 /* ABOUT CSS */
 .about {
-    margin-block: 100px;
     color: #545657;
 }
 
@@ -155,3 +160,43 @@ header >.hero-text > h1 {
 }
 
 /* END ABOUT CSS */
+
+
+/* Start Portfolio CSS */
+.image-group{
+    display: flex;
+}
+
+.image{
+    width: 33%;
+    position: relative;
+    color:#f4efec;
+    text-transform: capitalize;
+}
+
+.image img{
+    width: 100%;
+    display: block;
+}
+
+.image > .top-text {
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: rgba(96, 94, 86, 0.8);
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+}
+
+.image > .bottom-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.4rem;
+    background-color: #C8AE7A;
+    padding: .5rem 2rem;
+}
+
+/* End Portfolio CSS */
+
+
