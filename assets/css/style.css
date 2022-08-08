@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;300&display=swap');
+
 /* RESET CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,17 +16,22 @@ a {
     color: #ffffff;
 }
 
-p{
+p {
     font-size: 1.2rem;
     line-height: 1.6;
     letter-spacing: .1rem;
 }
 
+input,button {
+    display: block;
+}
+
 /* End RESET CSS */
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     background-color: #f4efec;
@@ -46,26 +52,51 @@ body{
     margin-bottom: 20px;
 }
 
-.centered-text{
+.centered-text {
     text-align: center;
 }
 
-section{
+.description {
+    width: 50%;
+    color: #545657;
+    margin-inline: auto;
+    font-size: 1rem;
+}
+
+section {
     margin-block: 100px;
 }
+
+.btn {
+    display: block;
+    padding: .8rem 6rem;
+    color: #f4efec;
+    background-color: #C8AE7A;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.sub-title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
 
 /* END UTILITY CLASSES */
 
 /* Hero CSS */
 
-header{
+header {
     height: 90vh;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
 }
 
-header > nav {
+header>nav {
     display: flex;
     background-color: #352c21;
     height: 100px;
@@ -75,38 +106,39 @@ header > nav {
     letter-spacing: .1rem;
 }
 
-nav > .logo > img {
+nav>.logo>img {
     height: 80px;
     width: 80px;
 }
 
-nav > .link-group > li {
-   display: inline-block;
-   margin-inline: 20px;
+nav>.link-group>li {
+    display: inline-block;
+    margin-inline: 20px;
 }
 
-nav > .link-group > li > a {
+nav>.link-group>li>a {
     font-size: 1.2rem;
     text-transform: capitalize;
 }
 
-nav > .button-group > .btn-list{
+nav>.button-group>.btn-list {
     display: flex;
 }
 
-.btn-list > .btn-item {
+.btn-list>.btn-item {
     margin-inline-end: 40px;
 }
 
-.btn-list >.btn-item > a {
+.btn-list>.btn-item>a {
     font-size: 1.2rem;
+    position: relative;
 }
 
-.btn-list > .btn-item:first-child > a {
+.btn-list>.btn-item:first-child>a {
     text-transform: uppercase;
 }
 
-header > .hero-text{
+header>.hero-text {
     margin-top: 20vh;
     text-align: center;
     background-color: rgba(96, 94, 86, 0.8);
@@ -114,7 +146,7 @@ header > .hero-text{
     height: 300px;
 }
 
-header >.hero-text > h1 {
+header>.hero-text>h1 {
     font-size: 4rem;
     font-weight: 300;
     letter-spacing: .2rem;
@@ -129,12 +161,7 @@ header >.hero-text > h1 {
     color: #545657;
 }
 
-.about .description {
-    width: 50%;
-    margin-inline: auto;
-}
-
-.about > .stats-container {
+.about>.stats-container {
     display: grid;
     margin-top: 100px;
     grid-template-columns: repeat(4, 1fr);
@@ -146,16 +173,18 @@ header >.hero-text > h1 {
 .stats-card {
     padding: 1rem;
 }
-.stats-card > h1 {
+
+.stats-card>h1 {
     color: #C8AE7A;
     font-size: 4.5rem;
     font-weight: 600;
 }
 
-.stat > span{
+.stat>span {
     font-weight: 300;
 }
-.stats-card + .stats-card {
+
+.stats-card+.stats-card {
     border-left: 2px solid #C8AE7A;
 }
 
@@ -163,32 +192,32 @@ header >.hero-text > h1 {
 
 
 /* Start Portfolio CSS */
-.image-group{
+.image-group {
     display: flex;
 }
 
-.image{
+.image {
     width: 33%;
     position: relative;
-    color:#f4efec;
+    color: #f4efec;
     text-transform: capitalize;
 }
 
-.image img{
+.image img {
     width: 100%;
     display: block;
 }
 
-.image > .top-text {
+.image>.top-text {
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     background-color: rgba(96, 94, 86, 0.8);
     padding: .5rem 2rem;
     font-size: 1.2rem;
 }
 
-.image > .bottom-text {
+.image>.bottom-text {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -199,4 +228,150 @@ header >.hero-text > h1 {
 
 /* End Portfolio CSS */
 
+/* Start Services CSS */
 
+.services>.card-group {
+    display: flex;
+    gap: 2rem;
+    margin-top: 50px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-image {
+    border: 1px solid #0F0F0E;
+    padding: 2rem;
+}
+
+.card>p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+/* End Services CSS */
+
+/* Start Gallery CSS */
+.gallery {
+    position: relative;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: calc(30% + 40px);
+    height: auto;
+    border-right: 5px solid #C8AE7A;
+    flex-shrink: 1;
+}
+
+.image-gallery img:is(:nth-child(1), :nth-child(2), :nth-child(3)) {
+    border-bottom: 5px solid #C8AE7A;
+}
+
+.gallery>.cover {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: calc(99% - 10px);
+    height: 100%;
+    top: 0;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.gallery>.cover>div {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.gallery>.cover>div>h2 {
+    text-align: center;
+    color: #f4efec;
+}
+
+
+
+/* End Gallery CSS */
+
+
+/** Start Contact Section */
+.contact > .form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.contact .sub-title {
+    color: #0F0F0E;
+}
+
+.form-box > p {
+    text-align: center;
+    color: #545657;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.form-box > form > input[type=text] {
+    border: none;
+    background: transparent;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #C8AE7A;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+/** End Contact Section */
+
+/** Start CTA Section */
+.cta{
+    height: 40vh;
+    position: relative;
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cta > .action-box{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta > .action-box > .sub-title{
+    color: #f4efec;
+}
+/** End CTA Section */
