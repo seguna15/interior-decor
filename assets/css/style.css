@@ -24,6 +24,8 @@ p {
 
 input,button {
     display: block;
+    border: none;
+    outline: none;
 }
 
 /* End RESET CSS */
@@ -72,8 +74,6 @@ section {
     padding: .8rem 6rem;
     color: #f4efec;
     background-color: #C8AE7A;
-    border: none;
-    outline: none;
     font-size: 1.3rem;
     text-transform: capitalize;
 }
@@ -375,3 +375,46 @@ header>.hero-text>h1 {
     color: #f4efec;
 }
 /** End CTA Section */
+
+/** Start Footer */
+
+footer{
+    background-color: #0F0F0E;
+    width: 100%;
+    color: #f4efec;
+    padding: 3rem;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .footer-subtitle {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    height: 2px;
+    width: 40%;
+    background-color: #C8AE7A ;
+    left: 0;
+    bottom: -5px;
+}
+
+
+footer li {
+    margin: 5px;
+}
+
+.footer-link > li >a {
+    text-transform: capitalize;
+}
+/** End Footer */
+
+
+
+
