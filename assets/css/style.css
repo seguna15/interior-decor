@@ -65,7 +65,7 @@ body {
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
-    color: #0F0F0E;
+    color: var(--black);
     margin-bottom: 20px;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .description {
     width: 50%;
-    color: #545657;
+    color: var(--grey);
     margin-inline: auto;
     font-size: 1rem;
 }
@@ -88,7 +88,7 @@ section {
     display: block;
     padding: .8rem 6rem;
     color: var(--white-grey);
-    background-color: #C8AE7A;
+    background-color: var(--gold);
     font-size: 1.3rem;
     text-transform: capitalize;
 }
@@ -113,7 +113,7 @@ header {
 
 header>nav {
     display: flex;
-    background-color: #34322d;
+    background-color: var(--chocolate-brown);
     height: 100px;
     justify-content: space-evenly;
     align-items: center;
@@ -142,7 +142,7 @@ nav   a:any-link {
 
 nav :is(a:hover, a:focus)
 {
-    color: #C8AE7A;
+    color: var(--gold);
 }
 
 nav>.button-group>.btn-list {
@@ -165,7 +165,7 @@ nav>.button-group>.btn-list {
 header>.hero-text {
     margin-top: 20vh;
     text-align: center;
-    background-color: rgba(96, 94, 86, 0.8);
+    background-color: var(--transparent-grey) ;
     padding-block: 50px;
     height: 300px;
 }
@@ -182,7 +182,7 @@ header>.hero-text>h1 {
 
 /* ABOUT CSS */
 .about {
-    color: #545657;
+    color: var(--grey);
 }
 
 .about>.stats-container {
@@ -199,7 +199,7 @@ header>.hero-text>h1 {
 }
 
 .stats-card>h1 {
-    color: #C8AE7A;
+    color: var(--gold);
     font-size: 4.5rem;
     font-weight: 600;
 }
@@ -209,7 +209,7 @@ header>.hero-text>h1 {
 }
 
 .stats-card+.stats-card {
-    border-left: 2px solid #C8AE7A;
+    border-left: 2px solid var(--gold);
 }
 
 /* END ABOUT CSS */
@@ -237,7 +237,7 @@ header>.hero-text>h1 {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(96, 94, 86, 0.8);
+    background-color: var(--transparent-grey);
     padding: .5rem 2rem;
     font-size: 1.2rem;
 }
@@ -247,7 +247,7 @@ header>.hero-text>h1 {
     right: 0;
     bottom: 0;
     font-size: 1.4rem;
-    background-color: #C8AE7A;
+    background-color: var(--gold);
     padding: .5rem 2rem;
 }
 
@@ -273,7 +273,7 @@ header>.hero-text>h1 {
 }
 
 .card-image {
-    border: 1px solid #0F0F0E;
+    border: 1px solid var(--black);
     padding: 2rem;
 }
 
@@ -298,17 +298,17 @@ header>.hero-text>h1 {
 .image-gallery img {
     width: calc(30% + 40px);
     height: auto;
-    border-right: 5px solid #C8AE7A;
+    border-right: 5px solid var(--gold);
     flex-shrink: 1;
 }
 
 .image-gallery img:is(:nth-child(1), :nth-child(2), :nth-child(3)) {
-    border-bottom: 5px solid #C8AE7A;
+    border-bottom: 5px solid  var(--gold);
 }
 
 .gallery>.cover {
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--transparent-black);
     width: calc(99% - 10px);
     height: 100%;
     top: 0;
@@ -348,12 +348,12 @@ header>.hero-text>h1 {
 }
 
 .contact .sub-title {
-    color: #0F0F0E;
+    color: var(--black);
 }
 
 .form-box > p {
     text-align: center;
-    color: #545657;
+    color: var(--grey);
     font-size: 1rem;
     margin-bottom: 40px;
 }
@@ -364,7 +364,7 @@ header>.hero-text>h1 {
     height: 3rem;
     width: 100%;
     margin-bottom: 2rem;
-    border-bottom: 1px solid #C8AE7A;
+    border-bottom: 1px solid var(--gold);
     line-height: 1.6;
     font-size: 1rem;
 }
@@ -383,7 +383,7 @@ header>.hero-text>h1 {
 }
 
 .cta > .action-box{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--transparent-black);
     position: absolute;
     left: 0;
     top: 0;
@@ -404,7 +404,7 @@ header>.hero-text>h1 {
 /** Start Footer */
 
 footer{
-    background-color: #0F0F0E;
+    background-color: var(--black);
     width: 100%;
     color: var(--white-grey);
     padding: 3rem;
@@ -436,7 +436,7 @@ footer .footer-subtitle::first-letter{
     z-index: 2;
     height: 2px;
     width: 40%;
-    background-color: #C8AE7A ;
+    background-color: var(--gold) ;
     left: 0;
     bottom: -5px;
 }
