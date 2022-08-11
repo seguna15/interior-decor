@@ -109,6 +109,7 @@ header {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 header>nav {
@@ -176,6 +177,53 @@ header>.hero-text>h1 {
     letter-spacing: .2rem;
     line-height: 1.5;
     color: #ffffff;
+}
+
+.mouse-prompt{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    width: 100px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.mouse{
+    height: 100px;
+    width: 50px;
+    border: 3px solid #f4efec;
+    border-radius: 30% ;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    animation-name: mouse-scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.scroll{
+    width: 10px;
+    height: 20px;
+    background-color: #f4efec;
+}
+
+@keyframes mouse-scroll {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateY(100%);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* End Hero CSS*/
