@@ -105,7 +105,7 @@ section {
 /* Hero CSS */
 
 header {
-    height: 90vh;
+    height: 100vh;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -225,7 +225,7 @@ header>.hero-text>h1 {
     }
 
     100%{
-        transform: translateY(0);
+        transform: translateY(150);
         opacity: 0;
     }
 }
