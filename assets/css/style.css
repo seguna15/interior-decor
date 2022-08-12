@@ -179,16 +179,15 @@ header>.hero-text>h1 {
     color: #ffffff;
 }
 
-.mouse-prompt{
+ .mouse-prompt{
     position: relative;
     left: 0;
     bottom: 0;
-    height: 300px;
+    height: 150px;
     width: 100px;
-    
     display: flex;
     justify-content: center;
-}
+} 
 
 .mouse{
     height: 100px;
@@ -199,7 +198,7 @@ header>.hero-text>h1 {
     align-items: flex-end; 
     justify-content: center;
     animation-name: mouse-scroll;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -216,13 +215,18 @@ header>.hero-text>h1 {
     }
 
     50%{
-        transform: translateY(100%);
+        transform: translateY(30px);
+        opacity: .5;
+    }
+
+    75%{
+        transform: translateY(100px);
         opacity: 1;
     }
 
     100%{
         transform: translateY(0);
-        opacity: 1;
+        opacity: 0;
     }
 }
 
