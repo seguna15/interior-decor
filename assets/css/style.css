@@ -183,7 +183,7 @@ header>.hero-text>h1 {
     position: relative;
     left: 0;
     bottom: 0;
-    height: 150px;
+    height: 300px;
     width: 100px;
     display: flex;
     justify-content: center;
@@ -192,6 +192,7 @@ header>.hero-text>h1 {
 .mouse{
     height: 100px;
     width: 50px;
+    position: absolute;
     border: 3px solid #f4efec;
     border-radius: 30% ;
     display: flex;
@@ -200,6 +201,7 @@ header>.hero-text>h1 {
     animation-name: mouse-scroll;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .scroll{
@@ -210,23 +212,27 @@ header>.hero-text>h1 {
 
 @keyframes mouse-scroll {
     0%{
-        transform: translateY(0);
+        /* transform: translateY(0); */
+        top:0;
         opacity: 0;
     }
 
     50%{
-        transform: translateY(30px);
+        /* transform: translateY(30px); */
+        top: 50px;
         opacity: .5;
     }
 
     75%{
-        transform: translateY(100px);
-        opacity: 1;
+        /* transform: translateY(100px); */
+        top: 100px;
+        opacity: .75;
     }
 
     100%{
-        transform: translateY(150);
-        opacity: 0;
+        /* transform: translateY(150); */
+        top: 150px;
+        opacity: 1;
     }
 }
 
